@@ -1,0 +1,50 @@
+
+#topBar{
+    border:1px solid black;
+    margin: -7.5;
+    height: 50px;
+    position:static;
+}
+#title{
+    border:1px solid transparent;
+    position:relative;
+    width:100px;
+    left:40px;
+    bottom:20.75px;
+    text-align: center;
+
+}
+#pic{
+    border:1px solid transparent;
+    width: 50px;
+    position:relative;
+    bottom:77px;
+}
+
+#g-Mail{
+    border:1px solid transparent;
+    position:relative;
+    height:40px;
+    width:143px;
+    left:75px;
+    top:5px;
+}
+#sBar{
+    border:1px solid transparent;
+    width:340px;
+    height:30px;
+    position: relative;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:30px;
+}
+#sBar input{
+    width:300px;
+    height:25px;
+}
+#sBtn{
+    border:1px solid transparent;
+    position: relative;
+    left:280px;
+    bottom:35px;
+}

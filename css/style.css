@@ -1,6 +1,6 @@
 body{
     border:1px solid black;
-    background-color:gray;
+    background-color:white;
     margin:0px;
     height:99.7%;
 }
@@ -11,20 +11,26 @@ body{
     bottom:543px;
 }
 #title{
-    border:1px solid transparent;
+    border:1px solid black;
     position:relative;
-    width:100px;
-    left:40px;
+    width:200px;
+    left:50px;
     bottom:20.75px;
     text-align: center;
-
+    border-radius: 5px 5px 5px 5px;
+    background:white;
+    box-shadow: 2px 2px 5px, -2px -2px 5px;
 }
-#pic{
+#title:hover{
+    background:black;
+    color:white;
+}
+/* #pic{
     border:1px solid transparent;
     width: 50px;
     position:relative;
     bottom:77px;
-}
+} */
 
 #g-Mail{
     border:1px solid transparent;
@@ -55,7 +61,7 @@ body{
 }
 
 #mainMail{
-    border:1px solid black;
+    border:1px solid transparent;
     position: relative;
     width: 1025px;
     margin-left:189px;
@@ -63,7 +69,7 @@ body{
     left:0px;
     top:-80.5%;
 }
-.Mail{
+/* .Mail{
     border:1px solid white;
     position: relative;
     width: 800px;
@@ -71,9 +77,9 @@ body{
     z-index: 2;
     left:10px;
     top: 10px;
-}
+} */
 #rightBar{
-    border:1px solid black;
+    border:1px solid transparent;
     position:relative;
     bottom:265%;
     width: 60px;
@@ -81,16 +87,17 @@ body{
     margin-left:auto;
 }
 .rBar{
-    border:1px solid red;
+    border:1px solid black;
     position:relative;
-    width: 40px;
+    width: 60px;
     height:90.8%;
     margin-left:auto;
+    box-shadow:-1px 0px;
 }
 
 
 #leftBar{
-    border:1px solid pink;
+    border:1px solid transparent;
     position:relative;
     width:188px;
     bottom:172.7%;
@@ -98,16 +105,22 @@ body{
     height:91.9%;
 }
 .lBar{
-    border:1px solid red;
+    border:1px solid black;
     position:relative;
-    width:178px;
-    margin-right:auto;
-    height:97%;
-    bottom:-5px;
+    width:189px;
+    right:1px;
+    height:50%;
+    bottom:1px;
+    overflow-y:auto;
+}
+.list1{
+    color:black;
+    text-align:center;
+    list-style-type:none;
 }
 
 #catMenu{
-    border:1px solid red;
+    border:1px solid black;
     margin-left:189.2px;
     position:relative;
     top:-84.4%;
@@ -131,7 +144,6 @@ body{
 
 #main{
     height:84%;
-    background: white;
     overflow-y:auto;
     font-size:13px;
     width:1027px;
@@ -139,18 +151,37 @@ body{
     z-index:4;
     top:102px;
     margin-left:189px;
+
 }
+
 .message{
     display:none;
+    border:1px solid black;
+    width:500px;
+    text-align:center;
+    margin-left:auto;
+    margin-right:auto;
+    position:relative;
+    bottom:5px;
+    padding: 5px 5px 5px 5px;
+    border-radius:5px 5px 5px 5px;
+    box-shadow:1px 1px 4px,-1px -1px 4px;
+    transition:1.2s;
+
+}
+.message:hover{
+    transform:scale(1.3);
+    transition:1.2s;
 }
 .content{
-    border:1px solid black;
+    border:.3px solid black;
     text-align: center;
-
-    
+    background:whitesmoke;
 }
+
+
 .date{
-    border:1px solid transparent;
+    border:.5px solid black;
     width:80px;
     top:2px;
     position: relative;
@@ -158,22 +189,40 @@ body{
     overflow: hidden;
     text-overflow: ellipsis;
     margin-left:auto;
+    border-radius:3px 3px 3px 3px;
+    box-shadow: 2px 2px 5px,-1px -1px 2px;
+}
+.date:hover{
+    background:blue;
+    opacity:.5;
+    color:white;
 }
 .subject{
-    border:1px solid transparent;
+    border:.5px solid black;
     width:350px;
     margin-left:auto;
     margin-right:auto;
     position: relative;
-    bottom:15px;
+    bottom:12px;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 2px 2px 5px,-1px -1px 2px;
+}
+.subject:hover{
+    background:blue;
+    opacity:.5;
+    color:white;
 }
 .sender{
-    border:1px solid transparent;
+    border:.5px solid black;
     position: relative;
     width:100px;
     margin-left:80px;
-    bottom:31.5px;
+    bottom:28px;
+    border-radius:3px 3px 3px 3px;
+    box-shadow: 2px 2px 5px,-1px -1px 2px;
 }
-.message{
-    border:1px solid red;
+.sender:hover{
+    background:blue;
+    opacity:.5;
+    color:white;
 }

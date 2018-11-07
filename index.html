@@ -6,12 +6,54 @@
     <script>
       window.onload = function(){
         // ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
-        // We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
-      };
-    </script>
+				// We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
+			console.log(window.geemails[0]);
+			console.table(window.geemails);
+
+			for(var i=0;i<window.geemails.length;i++){
+				var objects=document.createElement('div');
+				objects.className='content';
+				objects.innerHTML=window.geemails[i];
+				objects.addEventListener('click', showMsg);
+				main.appendChild(objects);
+			var dateBox=document.createElement('div');
+			dateBox.className='date';
+			dateBox.innerHTML=window.geemails[i].date;
+			objects.appendChild(dateBox)
+			
+			var subjectBox=document.createElement ('div');
+			subjectBox.className='subject';
+			subjectBox.innerHTML=window.geemails[i].subject;
+			objects.appendChild(subjectBox);
+			
+			var senderBox=document.createElement('div');
+			senderBox.className='sender';
+			senderBox.innerHTML=window.geemails[i].sender;
+			objects.appendChild(senderBox);
+			
+			
+			var msgBox=document.createElement('div');
+			msgBox.className='message'
+			msgBox.innerHTML=window.geemails[i].body;
+			objects.appendChild(msgBox);
+		}
+		function showMsg(){
+			var msgContent=this.querySelectorAll('.message')[0];
+			if(msgContent.style.display==='block'){
+				msgContent.style.display='none'
+			}else{
+				msgContent.style.display='block'
+			}
+		}
+
+	};
+		
+		
+		
+		</script>
 	</head>
 	<body>
-	
+	<div id="main" class="mainMsg"></div>
 <div id="topBar"class="topBar">
 <div id="g-Mail">
 	<h1 id="title"class="topBar">-mail</h1>
@@ -23,12 +65,18 @@
 				<i id='sBtn'class="fas fa-search"></i>
 			</div>
 </div>	
-<div id="subMail"class="category">
+<div id="catMenu"class="category">
 	<div id="cats" class="category"></div>
 </div>
-<div id="mainMail" class="Mail"></div>
-<div id="leftBar" class="lBar"></div>
-<div id="rightBar" class="rBar"></div>
+<div id="mainMail" class="mail">
+	<div id="mailHere" class="mail"></div>
+</div>
+<div id="leftBar" class="lBar">
+	<div id="innerLeftBar" class="lBar"></div>
+</div>
+<div id="rightBar" class="rBar">
+	<div id="innerRightBar" class="rBar"></div>
+</div>
 	</body>
 
 </html> 

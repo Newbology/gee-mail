@@ -30,7 +30,7 @@ You will need the following tools to complete this challenge
 
 4. With this data you must make a visual list of mail messages on the page with the following minimum requirements.
 	* Each message should have it's own row showing:
-		* Date
+		* Date 
 		* Sender
 		* Subject
 	* When clicking on a message you must provide some method of showing the message for that row.

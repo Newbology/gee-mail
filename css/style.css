@@ -7,7 +7,8 @@ body{
 #topBar{
     border:1px solid black;
     height: 50px;
-    position:static;
+    position: relative;
+    bottom:543px;
 }
 #title{
     border:1px solid transparent;
@@ -58,9 +59,9 @@ body{
     position: relative;
     width: 1025px;
     margin-left:189px;
-    height: 84%;
+    height: 80%;
     left:0px;
-    top:-1.5px;
+    top:-80.5%;
 }
 .Mail{
     border:1px solid white;
@@ -74,9 +75,9 @@ body{
 #rightBar{
     border:1px solid black;
     position:relative;
-    bottom:184.7%;
-    width: 50px;
-    height:91.8%;
+    bottom:265%;
+    width: 60px;
+    height:92%;
     margin-left:auto;
 }
 .rBar{
@@ -92,7 +93,7 @@ body{
     border:1px solid pink;
     position:relative;
     width:188px;
-    bottom:92.5%;
+    bottom:172.7%;
     margin-right:auto;
     height:91.9%;
 }
@@ -107,14 +108,13 @@ body{
 
 #catMenu{
     border:1px solid red;
-    margin-left:189px;
+    margin-left:189.2px;
     position:relative;
-    bottom:1px;
+    top:-84.4%;
     height:50px;
     width:1025px;
     z-index: 3;
     border-radius: 0px 0px 0px 0px;
-    top:-1px;
 }
 .category{
     top:2px;
@@ -128,10 +128,17 @@ body{
     margin-left:auto;
     margin-right:auto;
 }
+
 #main{
-    height:150%;
+    height:84%;
     background: white;
-    
+    overflow-y:auto;
+    font-size:13px;
+    width:1027px;
+    position: relative;
+    z-index:4;
+    top:102px;
+    margin-left:189px;
 }
 .message{
     display:none;
@@ -139,15 +146,33 @@ body{
 .content{
     border:1px solid black;
     text-align: center;
+
+    
 }
 .date{
-    border:1px solid red;
+    border:1px solid transparent;
+    width:80px;
+    top:2px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left:auto;
 }
 .subject{
-    border:1px solid red;
+    border:1px solid transparent;
+    width:350px;
+    margin-left:auto;
+    margin-right:auto;
+    position: relative;
+    bottom:15px;
 }
 .sender{
-    border:1px solid red;
+    border:1px solid transparent;
+    position: relative;
+    width:100px;
+    margin-left:80px;
+    bottom:31.5px;
 }
 .message{
     border:1px solid red;

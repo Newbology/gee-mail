@@ -100,7 +100,7 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     border:1px solid black;
     position:relative;
     width: 60px;
-    height:90.8%;
+    height:100%;
     margin-left:auto;
     box-shadow:-1px 0px;
 }
@@ -116,23 +116,112 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     height:91.9%;
 }
 .lBar{/* container to put all my information in for left bar*/
-    border:1px solid black;
+    border:1px solid transparent;
     position:relative;
     width:189px;
-    right:1px;
+    right:.5px;
     height:50%;
     bottom:1px;
     overflow-y:auto;
+    resize:vertical;
+}
+/*content for lbar cat 1*/
+.inboxlb{        
+    position: relative;
+    top:1px;
+    border:.5px solid black;
+    border-radius:0px 30px 30px 0px;
+    width:170px;
+    padding: 2px 2px 2px 2px;
+    text-align:center;
+}
+.inboxlb:hover{
+    background:	#e0e0eb;
+}
+.starlb{        
+    position: relative;
+    top:1px;
+    border:.5px solid black;
+    border-radius:0px 30px 30px 0px;
+    width:170px;
+    padding: 2px 2px 2px 2px;
+    text-align:center;
+}
+.snoozelb{        
+    position: relative;
+    top:1px;
+    border:.5px solid black;
+    border-radius:0px 30px 30px 0px;
+    width:170px;
+    padding: 2px 2px 2px 2px;
+    text-align:center;
+}
+.implb{        
+    position: relative;
+    top:1px;
+    border:.5px solid black;
+    border-radius:0px 30px 30px 0px;
+    width:170px;
+    padding: 2px 2px 2px 2px;
+    text-align:center;
+}
+.sentlb{        
+    position: relative;
+    top:1px;
+    border:.5px solid black;
+    border-radius:0px 30px 30px 0px;
+    width:170px;
+    padding: 2px 2px 2px 2px;
+    text-align:center; 
+}
+.draftlb{    
+    position: relative;
+    top:1px;
+    border:.5px solid black;
+    border-radius:0px 30px 30px 0px;
+    width:170px;
+    padding: 2px 2px 2px 2px;
+    text-align:center;
+}
+.catlb{        
+    position: relative;
+    top:1px;
+    border:.5px solid black;
+    border-radius:0px 30px 30px 0px;
+    width:170px;
+    padding: 2px 2px 2px 2px;
+    text-align:center;
+}
+.perslb{        
+    position: relative;
+    top:1px;
+    border:.5px solid black;
+    border-radius:0px 30px 30px 0px;
+    width:170px;
+    padding: 2px 2px 2px 2px;
+    text-align:center;
+
 }
 .list1{/* random list to give content to page */
     color:black;
     text-align:center;
+    border-radius:0px 0px 0px 0px;
+    border:.5px solid transparent;
     list-style-type:none;
+}
+.list2{
+    position: relative;
+    border:.5px solid black;
+    border-radius:0px 30px 30px 0px;
+    width:170px;
+    padding: 2px 2px 2px 2px;
+    text-align:center;
+
 }
 /* left side bar things */
 
 /* category menu above the main mail box */
-#catMenu{
+#catMenu{/* just a box really*/ 
     border:1px solid black;
     margin-left:189.2px;
     position:relative;
@@ -142,7 +231,7 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     z-index: 3;
     border-radius: 0px 0px 0px 0px;
 }
-.category{
+.category{/* container to hold things */
     top:2px;
     border:1px solid orange;
     right:.2px;
@@ -164,7 +253,7 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     width:1027px;
     position: relative;
     z-index:4;
-    top:102px;
+    top:100px;
     margin-left:189px;
 
 }
@@ -205,7 +294,7 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     overflow: hidden;
     text-overflow: ellipsis;
     margin-left:auto;
-    border-radius:3px 3px 3px 3px;
+    border-radius:33px 33px 33px 33px;
     box-shadow: 2px 2px 5px,-1px -1px 2px;
 }
 .date:hover{/* date hover  */

@@ -242,7 +242,7 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
 }
 /* left side bar things */
 
-/* category menu above the main mail box */
+/* category menu above the main mail box used to switch between different inboxes*/
 #catMenu{/* just a box really*/ 
     border:1px solid black;
     margin-left:189.2px;
@@ -265,7 +265,7 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     margin-left:auto;
     margin-right:auto;
 }
-/* category menu above the main mail box */
+/* category menu above the main mail box used to switch between different inboxes */
 
 /* main mail box holds all information */
 #main{
@@ -277,7 +277,6 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     z-index:4;
     top:100px;
     margin-left:189px;
-
 }
 
 .content{/* container to hold all the information given below */

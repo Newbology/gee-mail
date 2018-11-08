@@ -12,7 +12,7 @@
 		console.log(getNewMessage())
 
 
-			for(var i=0;i<window.geemails.length;i++){
+		for(var i=0;i<window.geemails.length;i++){
 				var objects=document.createElement('div');
 				objects.className='content';
 				objects.addEventListener('click', showMsg);
@@ -37,18 +37,58 @@
 			msgBox.className='message'
 			msgBox.innerHTML=window.geemails[i].body;
 			objects.appendChild(msgBox);
-
-		// var newEmail=document.createElement('div');
-		// newEmail.className="newMessages"
-
-		// objects.appendChild(addEmail);
 		}
+
+	// var getMailCount=geemails.length;
+
+	// 	var count=document.createElement('div');
+	// 	count.id='count';
+	// 	count.innerHTML=getMailCount;
+	// 	mailCount.appendChild(count);
+
+	var addEmail=getNewMessage();
+	
+
 		function addEmail(){
-			console.log(getNewMessage)
-			console.log(count++)
+			var newObj=document.createElement('div');
+			newObj.className='content';
+			newObj.addEventListener('click', showNew);
+			main.appendChild(newObj);
+
+			var newDate=document.createElement('div');
+			newDate.className='date';
+			newDate.innerHTML=addEmail.date;
+			newObj.appendChild(newDate);
+
+			var newSubject=document.createElement('div');
+			newSubject.className='subject';
+			newSubject.innerHTML=addEmail.subject;
+			newObj.appendChild(newSubject);
+
+			var newSender=document.createElement('div');
+			newSender.className='sender';
+			newSender.innerHTML=addEmail.sender;
+			newObj.appendChild(newSender);
+
+			var newMsg=document.createElement('div');
+			newMsg.className='message';
+			newMsg.innerHTML=addEmail.body;
+			newObj.appendChild(newMsg);
+
+			// getMailCount++;
+			// document.getElementById('count').innerHTML=(getMailCount);
+
 		}
-		setInterval(addEmail,2000)
+	setInterval(addEmail,11000)
 		
+		function showNew(){
+			var showNewMsg=this.querySelectorAll(".message")[0]
+			if(showNewMsg.style.display==='block'){
+				showNewMsg.style.display='none'
+			}else{
+				showNewMsg.style.display='block'
+			}
+		}
 
 		function showMsg(){
 			var msgContent=this.querySelectorAll('.message')[0];
@@ -58,8 +98,6 @@
 				msgContent.style.display='block'
 			}
 		}
-
-		var count= 10
 
 		// var counter = document.getElementById('counter');
 		// 		var messageCount = window.geemails.length;
@@ -73,7 +111,7 @@
 	</head>
 	<body>
 	<div id="main" class="mainMsg"></div>
-	
+	<div id="mailCount"></div>
 	<!-- this is the top menu bar portion -->
 <div id="topBar"class="topBar">
 

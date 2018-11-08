@@ -39,17 +39,17 @@
 			objects.appendChild(msgBox);
 		}
 
-	// var getMailCount=geemails.length;
+	var getMailCount=geemails.length;
 
-	// 	var count=document.createElement('div');
-	// 	count.id='count';
-	// 	count.innerHTML=getMailCount;
-	// 	mailCount.appendChild(count);
+		var count=document.createElement('div');
+		count.id='count';
+		count.innerHTML=getMailCount;
+		mailCount.appendChild(count);
 
 	var addEmail=getNewMessage();
 	
 
-		function addEmail(){
+		function addEmails(){
 			var newObj=document.createElement('div');
 			newObj.className='content';
 			newObj.addEventListener('click', showNew);
@@ -75,11 +75,12 @@
 			newMsg.innerHTML=addEmail.body;
 			newObj.appendChild(newMsg);
 
-			// getMailCount++;
-			// document.getElementById('count').innerHTML=(getMailCount);
+			getMailCount++;
+			document.getElementById('count').innerHTML=(getMailCount);
 
 		}
-	setInterval(addEmail,11000)
+
+		setInterval(addEmails, 11000);
 		
 		function showNew(){
 			var showNewMsg=this.querySelectorAll(".message")[0]
@@ -99,11 +100,7 @@
 			}
 		}
 
-		// var counter = document.getElementById('counter');
-		// 		var messageCount = window.geemails.length;
-		// 		document.getElementById('counter').innerHTML = [messageCount] + ' New Messages!';
-
-
+		
 	};
 		
 		

@@ -156,6 +156,9 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     padding: 2px 2px 2px 2px;
     text-align:center;
 }
+.snoozelb:hover{
+    background:	#e0e0eb;
+}
 .implb{        
     position: relative;
     top:1px;
@@ -164,6 +167,9 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     width:170px;
     padding: 2px 2px 2px 2px;
     text-align:center;
+}
+.imp:hover{
+    background:	#e0e0eb;
 }
 .sentlb{        
     position: relative;
@@ -174,6 +180,9 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     padding: 2px 2px 2px 2px;
     text-align:center; 
 }
+.sentlb:hover{
+    background:	#e0e0eb;
+}
 .draftlb{    
     position: relative;
     top:1px;
@@ -183,6 +192,9 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     padding: 2px 2px 2px 2px;
     text-align:center;
 }
+.draftlb:hover{
+      background:#e0e0eb;
+}
 .catlb{        
     position: relative;
     top:1px;
@@ -191,6 +203,9 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     width:170px;
     padding: 2px 2px 2px 2px;
     text-align:center;
+}
+.catlb:hover{
+    background:	#e0e0eb;
 }
 .perslb{        
     position: relative;
@@ -202,6 +217,9 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     text-align:center;
 
 }
+.perslb:hover{
+    background:	#e0e0eb;
+}
 .list1{/* random list to give content to page */
     color:black;
     text-align:center;
@@ -209,6 +227,7 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     border:.5px solid transparent;
     list-style-type:none;
 }
+
 .list2{
     position: relative;
     border:.5px solid black;
@@ -217,6 +236,9 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     padding: 2px 2px 2px 2px;
     text-align:center;
 
+}
+.list2:hover{
+    background:	#e0e0eb;
 }
 /* left side bar things */
 
@@ -288,18 +310,17 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
 .date{/* date of email sent */
     border:.5px solid black;
     width:80px;
-    top:2px;
+    top:26px;
     position: relative;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-left:auto;
+    margin-left:91%;
     border-radius:33px 33px 33px 33px;
     box-shadow: 2px 2px 5px,-1px -1px 2px;
 }
 .date:hover{/* date hover  */
-    background:blue;
-    opacity:.5;
+    background:rgb(146, 146, 233);
     color:white;
 }
 .subject{/* subjecct of email */
@@ -313,8 +334,7 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     box-shadow: 2px 2px 5px,-1px -1px 2px;
 }
 .subject:hover{/*subject hover */
-    background:blue;
-    opacity:.5;
+    background:rgb(146, 146, 233);
     color:white;
 }
 .sender{/* who sent the mail */
@@ -327,8 +347,7 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     box-shadow: 2px 2px 5px,-1px -1px 2px;
 }
 .sender:hover{/*sender hover */
-    background:blue;
-    opacity:.5;
+    background:rgb(146, 146, 233);
     color:white;
 }
 /* main mail box holds all information */

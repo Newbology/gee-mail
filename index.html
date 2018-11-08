@@ -37,7 +37,17 @@
 			msgBox.className='message'
 			msgBox.innerHTML=window.geemails[i].body;
 			objects.appendChild(msgBox);
+
+		// var newEmail=document.createElement('div');
+		// newEmail.className="newMessages"
+
+		// objects.appendChild(addEmail);
 		}
+		function addEmail(){
+			console.log(getNewMessage)
+			console.log(count++)
+		}
+		setInterval(addEmail,2000)
 		
 
 		function showMsg(){
@@ -48,6 +58,9 @@
 				msgContent.style.display='block'
 			}
 		}
+
+		var count= 10
+
 		// var counter = document.getElementById('counter');
 		// 		var messageCount = window.geemails.length;
 		// 		document.getElementById('counter').innerHTML = [messageCount] + ' New Messages!';

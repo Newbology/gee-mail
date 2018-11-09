@@ -118,6 +118,50 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     margin-left:auto;
     box-shadow:-1px 0px;
 }
+#rightObj1{
+    border:1px solid black;
+    position:relative;
+}
+#rightObj1:hover{
+    background:	#e0e0eb;
+}
+.rightObj1{
+    border:1px solid transparent;
+    position:relative;
+}
+
+#rightObj2{
+    border:1px solid black;
+    position: relative;
+}
+#rightObj2:hover{    background:	#e0e0eb;}
+.rightObj2{
+    border:1px solid transparent;
+    position: relative;
+}
+
+#rightObj3{
+    border:1px solid black;
+    position: relative;
+}
+#rightObj3:hover{    background:	#e0e0eb;}
+.rightObj3{
+    border:1px solid transparent;
+    position: relative;
+}
+
+#rightObj4{
+    border:1px solid black;
+    position: relative;
+}
+#rightObj4:hover{    background:	#e0e0eb;}
+.rightObj4{
+    border:1px solid transparent;
+    position: relative;
+}
+
+
+
 /* right side bar things */
 
 /* left side bar things */
@@ -269,7 +313,7 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
 }
 .category{/* container to hold things */
     top:2px;
-    border:1px solid orange;
+    border:1px solid transparent;
     right:.2px;
     position:relative;
     top:4px;
@@ -278,6 +322,59 @@ i was going to use it to hold the main mailbox, but i ended up not needing it.*/
     width:800px;
     margin-left:auto;
     margin-right:auto;
+}
+#cat1{
+    border:1px solid black;
+    position: relative;
+    width:150px;
+    height:37px;
+    left:171px;
+    text-align:center;
+    text-align:bottom;
+
+}
+#cat1:hover{
+    background:	#e0e0eb;
+}
+#cat1x{
+    border:1px solid transparent;
+    width:60px;
+    top:8px;
+    position: relative;
+}
+#cat2{
+    border:1px solid black;
+    position: relative;
+    width:150px;
+    bottom:38.5px;
+    height:36.5px;
+    margin-right:auto;
+    margin-left:auto;
+    text-align:center;
+
+}
+#cat2:hover{background:	#e0e0eb;}
+#cat2x{
+    border:1px solid transparent;
+    width:60px;
+    top:8px;
+    position:relative;
+}
+#cat3{
+    border:1px solid black;
+    position: relative;
+    width:150px;
+    left:476.5px;
+    bottom:77px;
+    height:36.5px;
+    text-align:center;
+
+}
+#cat3:hover{background:	#e0e0eb;}
+#cat3x{
+    position: relative;
+    width:60px;
+    top:8px;
 }
 /* category menu above the main mail box used to switch between different inboxes */
 

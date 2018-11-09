@@ -11,6 +11,7 @@
 			// console.table(window.geemails);
 		console.log(getNewMessage())
 
+// get first 10 emails
 
 		for(var i=0;i<window.geemails.length;i++){
 				var objects=document.createElement('div');
@@ -38,14 +39,17 @@
 			msgBox.innerHTML=window.geemails[i].body;
 			objects.appendChild(msgBox);
 		}
+// get first 10 emails
 
+//  mail counter
 	var getMailCount=geemails.length;
 
 		var count=document.createElement('div');
 		count.id='count';
 		count.innerHTML=getMailCount;
 		mailCount.appendChild(count);
-
+// mail counter 
+// Add new email to page
 	var addEmail=getNewMessage();
 	
 
@@ -79,9 +83,13 @@
 			document.getElementById('count').innerHTML=(getMailCount);
 
 		}
+// add new email to page
 
+// add emails every X amount of seconds
 		setInterval(addEmails, 11000);
-		
+		// add emails every X amount of seconds
+
+// hides and shows the body paragraph 
 		function showNew(){
 			var showNewMsg=this.querySelectorAll(".message")[0]
 			if(showNewMsg.style.display==='block'){
@@ -101,6 +109,7 @@
 		}
 
 		
+// hides and shows the body paragraph 
 	};
 		
 		
@@ -108,14 +117,16 @@
 	</head>
 	<body>
 	<div id="main" class="mainMsg"></div>
-	<div id="mailCount"></div>
+	
 	<!-- this is the top menu bar portion -->
 <div id="topBar"class="topBar">
 
 <div id="g-Mail">
+	
 	<h1 id="title"class="topBar">Gee-mail</h1>
 <img id='pic'class='topBars'src="assets/gangstarr.jpg" alt="
 		Gangstarr">
+		<div id="mailCount"class='topBar'></div>
 	</div>
 <div id="sBar"class="searchBox">
 				<form ><input type="text" name="search"placeholder="Search..."></form>
@@ -123,21 +134,20 @@
 				<i id='sBtn'class="fas fa-search"></i>
 			</div>
 </div>	
-<!-- this is the top menu bar portion -->
+	
 
-<!-- this is the category menu above the main mail box -->
+	<!-- this is the category menu above the main mail box -->
 <div id="catMenu"class="category">
 	<div id="cats" class="category"></div>
 </div>
-<!-- this is the category menu above the main mail box -->
-
-<!-- main mail box no real function -->
+	
+	<!-- main mail box no real function -->
 <div id="mainMail" class="mail">
 	<div id="mailHere" class="mail"></div>
 </div>
-<!-- main mail box no real function -->
 
-<!-- left side bar -->
+
+	<!-- left side bar -->
 <div id="leftBar" class="lBar">
 	<div id="innerLeftBar" class="lBar">
 		<div id="inbox"class='inboxlb'>Inbox</div>
@@ -163,13 +173,13 @@
 		<li class="list2">random text</li></div>
 	</div>
 </div>
-<!-- left side bar -->
+	
 
-<!-- right side bar -->
+	<!-- right side bar -->
 <div id="rightBar" class="rBar">
 	<div id="innerRightBar" class="rBar"></div>
 </div>
-<!-- right side bar -->
+
 	</body>
 
 </html> 

@@ -36,11 +36,12 @@ body{/* just the body of the page*/
     top:5px;
 }
 #pic{/*picture next to title, it's the group GANGSTAR cuz they're Gs (geemail, get it?)*/
-    border:1px solid transparent;
+    border:1px solid whitesmoke;
+    border-radius:5px;
     width: 50px;
     position:relative;
     bottom:77px;
-    right:5px;
+    right:8px;
 }
 
 #sBar{/*search bar top menu things*/
@@ -61,6 +62,19 @@ body{/* just the body of the page*/
     position: relative;
     left:280px;
     bottom:35px;
+}
+#mailCount{
+    border:1px solid red;
+    border-radius: 15px;
+    width:25px;
+    height:20px;
+    text-align: center;
+    padding:5px 1px 1px 1px;
+    bottom:105px;
+    right:55px;
+    box-shadow: 1px 1px 5px,-1px -1px 5px ;
+    background:#C0C0C0;
+    position:relative;
 }
 /* everything inside the top bar section */
 

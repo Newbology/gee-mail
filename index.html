@@ -54,6 +54,8 @@
 	
 
 		function addEmails(){
+			var addEmail=getNewMessage();
+
 			var newObj=document.createElement('div');
 			newObj.className='content';
 			newObj.addEventListener('click', showNew);
@@ -86,7 +88,7 @@
 // add new email to page
 
 // add emails every X amount of seconds
-		setInterval(addEmails, 11000);
+		setInterval(addEmails, 5000);
 		// add emails every X amount of seconds
 
 // hides and shows the body paragraph 
